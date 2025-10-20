@@ -1,0 +1,53 @@
+# Model Configuration
+model:
+  concept_embedding_dim: 128
+  hidden_dim: 256
+  num_gcn_layers: 3
+  num_attention_heads: 4
+  dropout: 0.2
+  num_clusters: 50
+  lstm_hidden_dim: 200
+  
+# Training Configuration
+training:
+  batch_size: 64
+  learning_rate: 0.001
+  num_epochs_phase1: 100
+  num_epochs_phase2: 200
+  early_stopping_patience: 10
+  grad_clip: 5.0
+  
+# Regularization
+regularization:
+  alpha1_graph: 0.01
+  alpha2_entropy: 0.05
+  alpha3_temporal: 0.02
+  
+# Question Selection
+question_selection:
+  lambda_info: 0.7
+  lambda_unc: 0.2
+  lambda_eff: 0.1
+  max_test_length: 30
+  min_test_length: 5
+  uncertainty_threshold: 0.15
+  
+# Reward Weights
+rewards:
+  w1_accuracy: 0.5
+  w2_efficiency: 0.3
+  w3_uncertainty_reduction: 0.2
+  
+# Data
+data:
+  train_ratio: 0.7
+  val_ratio: 0.15
+  test_ratio: 0.15
+  max_sequence_length: 200
+  
+# Paths
+paths:
+  data_dir: "./data"
+  checkpoint_dir: "./checkpoints"
+  log_dir: "./logs"
+  results_dir: "./results"
