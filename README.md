@@ -1,0 +1,2 @@
+# Adaptive-Knowledge-Assessment-via-Symmetric-Hierarchical-Bayesian-Neural-Networks
+This repository provides a complete implementation of a hierarchical probabilistic neural framework that integrates Bayesian inference with symmetric deep neural architectures for adaptive, efficient knowledge assessment. The system models student knowledge as latent representations within a graph-structured concept dependency network.
